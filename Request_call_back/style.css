@@ -1,0 +1,670 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 2358px;
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.open {
+  margin: 10px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.open button {
+  height: 40px;
+  width: 100px;
+  background-color: #c7222a;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  width: 428px;
+  max-height: 763px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-direction: column;
+  /* padding: 0 0 25px 25px;  */
+  margin-top: 239px;
+  margin-left: 386px;
+  margin-right: 386px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  width: 382px;
+  margin: 0 0 8px 1px;
+  font-family: PFHandbookPro;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  /* white-space: nowrap; */
+
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.close-btn button {
+  background-color: gray;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.subtitle {
+
+  /* padding: 0 23px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+  margin-right: 17px;
+  /* margin: 8px 23px 15px 23px; */
+}
+
+.subtitle span {
+  max-width: 382px;
+  height: 42px;
+  /* width: 382px;
+  height: 42px; */
+  /* margin: 8px 23px 15px 23px; */
+  opacity: 0.7;
+  font-family: PFHandbookPro;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+
+
+}
+
+.Field-BG {
+  margin-left: 23px;
+  margin-right: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.Field-BG .name {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  width: 42px;
+  height: 23px;
+}
+
+.Field-BG .name_email_input {
+  width: 380px;
+  height: 50px;
+  padding: 14px 82px 13px 18px;
+  border-radius: 4.6px;
+  border: solid 1.2px #cdcece;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.Field-BG .email {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  width: 42px;
+  height: 23px;
+}
+
+.city {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0;
+  width: 77px;
+  height: 23px
+}
+
+.Field-BG .mobile_number {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 110px;
+  height: 23px;
+}
+
+.mobile_input {
+  width: 100%;
+  height: 50px;
+  padding: 14px 82px 13px 18px;
+  border-radius: 4.6px;
+  border: solid 1.2px #cdcece;
+  background-color: #fff;
+  box-sizing: border-box;
+
+}
+
+.otp_btn {
+  margin: 0 0 0 0;
+  padding: 15px 29px 16px 34px;
+  border-radius: 2.9px;
+  background-color: #6d7278;
+  height: 50px;
+  width: 121px;
+  border: 1px solid black;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+
+}
+
+.btn_input_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 380px;
+  height: 50px;
+}
+
+.otp {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sendOTP {
+  width: 58px;
+  height: 19px;
+  font-family: PFHandbookPro;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+
+}
+
+.Rectangle-copy {
+  width: 179px;
+  height: 44px;
+  margin: 16px 100px 16px 101px;
+  padding: 10px 14px 13px;
+  background-color: #c7222a;
+}
+
+.REQUEST-CALLBACK {
+  width: 151px;
+  height: 20px;
+  margin: 1px 0 0;
+  font-family: PFHandbookPro;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+
+}
+
+.By-clicking-on-Reque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 332px;
+  height: 28px;
+  margin: 16px 24px 10px 23px;
+  opacity: 0.7;
+  font-family: PFHandbookPro;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+}
+
+.By-clicking-on-Reque .text-style-1 {
+  color: #c7222a;
+}
+
+#addeddiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#addedinput {
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  width: 380px;
+  height: 50px;
+  padding: 14px 82px 13px 18px;
+  border-radius: 4.6px;
+  border: solid 1.2px #cdcece;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.city-option {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width:600px) {
+  .modalContainer {
+    width: 330px;
+    min-height: 531px;
+    border-radius: 1.5px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
+    /* padding: 0 0 25px 25px;  */
+    margin-top: 0;
+    margin-left: 88px;
+    margin-right: 88px;
+    padding-bottom: 0;
+    /* padding-left: 10px; */
+    object-fit: contain;
+
+
+
+  }
+
+  .modalContainer .title {
+    width: 294px;
+    height: 46px;
+    margin: 0 0 4px 1px;
+    font-size: 19px;
+
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 294px;
+    height: 32px;
+    margin-top: 5px;
+    /* width: 294px;
+    height: 32px; */
+    /* box-sizing: border-box; */
+
+
+  }
+
+  .subtitle span {
+    font-size: 12px;
+    line-height: 1.14;
+  }
+
+  .Field-BG {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+    width: 40px;
+    width: 32.8px;
+    height: 17px;
+
+
+  }
+
+  .Field-BG .name_email_input {
+    width: 293px;
+    height: 39px;
+    padding: 10.4px 176.1px 10.6px 13.9px;
+    border-radius: 3.6px;
+
+
+  }
+
+  .email {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 31.8px;
+    height: 17px;
+  }
+
+  .Field-BG .mobile_number {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 84.9px;
+    height: 17px;
+    white-space: nowrap;
+
+  }
+
+  .btn_input_div {
+    width: 293px;
+    height: 39px;
+  }
+
+  .mobile_input {
+    width: 100%;
+    height: 39px;
+    padding: 14px 82px 13px 18px;
+    border-radius: 4.6px;
+
+
+
+  }
+
+  .otp_btn {
+    /* padding: 15px 29px 16px 34px; */
+    border-radius: 2.2px;
+    height: 39px;
+    width: 93px;
+    font-size: 25px;
+  }
+
+  .Rectangle-copy {
+    width: 138px;
+    height: 34px;
+    margin: 18.7px 95.1px 10.3px 96.9px;
+    padding: 9px 10px 9.6px 11px;
+
+  }
+
+  .REQUEST-CALLBACK {
+    width: 117px;
+    height: 15.4px;
+    font-family: PFHandbookPo;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+
+
+
+
+  }
+
+  .By-clicking-on-Reque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 256px;
+    height: 26px;
+    margin: 2px 10px 10px 23px;
+    opacity: 0.7;
+    font-family: PFHandbookPro;
+    font-size: 11px;
+  }
+
+  .sendOTP {
+    width: 44px;
+    height: 14px;
+    font-size: 12px;
+  }
+
+  #addeddiv {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  #addedinput {
+    margin-top: 8px;
+    /* margin-bottom: 10px; */
+    width: 293px;
+    height: 39px;
+    padding: 14px 82px 13px 18px;
+    border-radius: 4.6px;
+    border: solid 1.2px #cdcece;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  .city-option {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .modalContainer {
+    width: 342px;
+    min-height: 539px;
+    border-radius: 1.6px;
+    box-shadow: 0 6px 19px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 0;
+    margin-left: 88px;
+    margin-right: 88px;
+    padding-bottom: 0;
+    object-fit: contain;
+  }
+
+  .modalContainer .title {
+    width: 305px;
+    height: 48px;
+    margin: 0 0 6px 1px;
+    font-size: 19px;
+
+
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+    height: 33.6px;
+    margin: 0;
+
+
+
+
+  }
+
+  .subtitle span {
+    font-size: 13px;
+    line-height: 1.29;
+  }
+
+  .Field-BG {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+    width: 34px;
+    height: 19px;
+
+
+
+  }
+
+  .Field-BG .name_email_input {
+    width: 304px;
+    height: 40px;
+    padding: 11.2px 186.6px 10.4px 14.4px;
+    border-radius: 3.7px;
+
+  }
+
+
+
+
+  .email {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 33px;
+    height: 19px;
+
+  }
+
+  .Field-BG .mobile_number {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 88px;
+    height: 19px;
+    white-space: nowrap;
+
+
+
+  }
+
+  .btn_input_div {
+    width: 304px;
+    height: 40px;
+
+  }
+
+  .mobile_input {
+    width: 100%;
+    height: 40px;
+    padding: 14px 82px 13px 18px;
+    border-radius: 3.7px;
+
+
+
+  }
+
+  .otp_btn {
+    border-radius: 2.3px;
+    height: 40px;
+    width: 97px;
+    font-size: 25px;
+
+  }
+
+  .Rectangle-copy {
+    width: 143px;
+    height: 35px;
+    margin: 13.6px 67.2px 12.4px 81.8px;
+    padding: 9px 11px 10;
+
+  }
+
+
+  .REQUEST-CALLBACK {
+    width: 121px;
+    height: 16px;
+    font-family: PFHandbookPo;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+
+
+
+
+
+
+  }
+
+  .By-clicking-on-Reque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 265px;
+    height: 22px;
+    margin: 2px 10px 10px 23px;
+    opacity: 0.7;
+    font-family: PFHandbookPro;
+    font-size: 10px;
+
+
+  }
+
+  .sendOTP {
+    width: 97px;
+    height: 40px;
+    font-size: 12px;
+
+  }
+
+  #addeddiv {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  #addedinput {
+    margin-top: 8px;
+
+    width: 304px;
+    height: 40px;
+    padding: 14px 82px 13px 18px;
+    border-radius: 3.7px;
+    border: solid 1.2px #cdcece;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  .city-option {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+}

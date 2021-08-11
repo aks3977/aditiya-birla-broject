@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>callback</title>
+</head>
+
+<body>
+    <div class="open">
+        <button id="open-btn">Show Modal</button>
+    </div>
+    <div class="open">
+        <button id="open-btn1">Show Modal 1</button>
+    </div>
+    <div class="open">
+        <button id="open-btn2">Show Modal2</button>
+    </div>
+    <div class="open">
+        <button id="open-btn3">Show Modal3</button>
+    </div>
+    <div class="open">
+        <button id="open-btn4">Show Modal4</button>
+    </div>
+    <div class="open">
+        <button id="open-btn5">Show Modal5</button>
+    </div>
+
+    <div class="modalContainer" id="popup-modal">
+        <div class="close-btn">
+            <button class="close">&times;</button>
+        </div>
+        <div class="title" id="heading">
+            <span>Aditya Birla Health Insurance Company Limited</span>
+        </div>
+        <div class="subtitle">
+            <span class="Enter-your-details-f">
+                Enter your details for a callback and we will help you select the<br />
+                right product as per your need.
+            </span>
+
+        </div>
+        <div class="Field-BG">
+            <span class="name"> Name </span>
+            <input type="text" placeholder="Enter your name" class="name_email_input" name="name" />
+        </div>
+        <div class="Field-BG" id="email-div">
+            <span class="email"> Email </span>
+            <input type="text" placeholder="Enter your Email ID" class="name_email_input" name="email" />
+        </div>
+        <div class="Field-BG">
+            <span class="mobile_number"> Mobile Number </span>
+            <div class="btn_input_div">
+                <input type="text" placeholder="Enter your Mobile Number*" class="mobile_input" value="+91 |" id="contact" pattern="^\d{10}$" required="required"></input>
+                <button class="otp_btn" id="otp_button" name="otp_button">
+                    <span class="sendOTP"> Send OTP </span>
+                </button>
+            </div>
+        </div>
+        <div class="Field-BG">
+            <span class="otp"> OTP </span>
+            <input type="text" placeholder="Enter your OTP" class="name_email_input" />
+        </div>
+        <button class="Rectangle-copy" id="callback">
+            <span class="REQUEST-CALLBACK" > Request Callback </span>
+        </button>
+        <span class="By-clicking-on-Reque">
+            By clicking on Request Callback, it would mean that you are agreeing
+            to our <br /><a class="text-style-1"> Terms & Conditions </a>
+        </span>
+    </div>
+    
+    </body>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
